@@ -9,7 +9,7 @@ const Card = (props) => {
 
           <div className="top">
             <img
-              src="https://imgs.search.brave.com/siHHGkmIuk_-XyHCnFJ5xy74HYTP0NMdaNx1GZP8Rqg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/aWNvbnM4LmNvbS8z/ZC1mbHVlbmN5LzEy/MDAvYW1hem9uLmpw/Zw"
+              src={props.brandLogo}
               alt=""
             />
             <button>
@@ -19,11 +19,11 @@ const Card = (props) => {
           
 
           <div className="center">
-            <h3>{props.company} <span>5 Days ago</span></h3>
-            <h2>Senior UI/UX Designer</h2>
+            <h3>{props.company} <span>{props.datePosted}</span></h3>
+            <h2>{props.post}</h2>
             <div className="tag">
-              <h4>Part Time</h4>
-              <h4>Senior Level</h4>
+              <h4>{props.tag1}</h4>
+              <h4>{props.tag2}</h4>
             </div>
 
           </div>
@@ -32,7 +32,7 @@ const Card = (props) => {
 
           <div className="bottom">
             <div>
-            <h3>$120/hr</h3>
+            <h3>{props.pay}</h3>
             <p>Mumbai , India</p>
             </div>
               <button>Apply Now</button>

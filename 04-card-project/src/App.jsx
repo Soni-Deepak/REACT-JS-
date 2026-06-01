@@ -46,7 +46,7 @@ const App = () => {
       location: "Los Gatos, USA"
     },
     {
-      brandLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png",
+      brandLogo: "https://tse3.mm.bing.net/th/id/OIP._YRByM7l5SCayIje5TRfuwHaHj?rs=1&pid=ImgDetMain&o=7&rm=3",
       companyName: "Google",
       datePosted: "1 week ago",
       post: "Cloud Solutions Architect",
@@ -110,11 +110,14 @@ const App = () => {
   console.log(jobOpenings);
 
   return (
-    <div>
+    <div> 
       <div className="parent">
-        {jobOpenings.map(function(elem){
+        {jobOpenings.map(function(elem , idx){
 
-          return <Card company ={elem.companyName} />
+          // idx(index) is used to uniquely identifying the element
+          return <div key = {idx} > 
+            <Card company ={elem.companyName} post = {elem.post} tag1 = {elem.tag1} tag2 = {elem.tag2} pay = {elem.pay} brandLogo = {elem.brandLogo} datePosted = {elem.datePosted} />
+          </div>
         })}
       </div>
     </div>
