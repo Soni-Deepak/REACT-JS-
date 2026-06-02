@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.parent{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #111;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.Card{
+    height: 330px;
+    width: 280px;
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Card .top{
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    margin-bottom: 3px;
+    margin-left: 6px;
+
+}
+
+.top button{
+    display: flex;
+    align-items: center;
+    border: 1px solid #dadada;
+    padding: 3px 0px;
+    font-size: 10px;
+    border-radius: 5px;
+    gap: 3px;
+    background-color: #d3ffe0;
+    color: #4710bcce;
+}
+
+.img{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.img img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid #dadada;
+    margin-top: 10px;
+    margin-left: 11px;
+    object-fit: cover ;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center h2{
+    font-size: 23px;
+    /* font-weight: 900; */
+}
+
+.center p {
+  font-size: 10px;
+  font-weight: 400;
+  color: #aeaeae;
+}
+
+.center .tag{
+  display: flex;
+  margin-top: 10px;
+  gap: 5px;
+  /* justify-content: center; */
+   /* align-items: center; */
+}
+
+.center .tag h4{
+  font-size: 9px;
+  /* background-color: #e4e4e4; */
+  background-color: transparent;
+  color: #202020;
+  font-weight: 500;
+  padding: 4px 8px;
+  border: 1px solid #878484;
+  border-radius:58px;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 0.5px solid #d7d7d7ce;
+     padding-top: 15px;
+
+}
+
+.bottom button{
+  background-color: transparent;
+  color: #111e;
+  padding: 7px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  /* column-width: 600; */
+}
+
+/* margin-top: ; */
+.center p:nth-of-type(2){
+    margin-block: 14px;
+        margin-inline: 10px;
+        text-align: center;
+}
+
+.bottom button:hover{
+    background-color: rgb(50, 179, 239);
+    color: #fff;
+}
+
+.top button:hover{
+    background-color: rgb(173, 255, 173);
+    color: #fff;
+}
+
+.tag{
+    text-align: center;
+}
