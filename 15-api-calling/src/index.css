@@ -1,0 +1,13 @@
+*{
+  margin: 0;padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+button{
+  background-color: #fff;
+  color: black;
+  margin: 50px;
+  padding: 15px;
+  padding-inline: 43px;
+}
